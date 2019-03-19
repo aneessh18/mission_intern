@@ -1,24 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-int lisrec(int a[],int i)
-{
-    if(i<0)
-        return 0;
-    else
-    {
-        int q=INT_MIN;
-        for(int j=0;j<i;j++)
-        {
-            if(a[j]<a[i])
-            {
-                q=max(q,1+lisrec(a,j));
-            }
-            else
-                q=max(q,lisrec(a,j));
-        }
-        return q;
-    }
-}
 int lis(int a[],int n) // dp solution
 {
     int dp[n];
