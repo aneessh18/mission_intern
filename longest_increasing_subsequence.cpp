@@ -32,6 +32,4 @@ int main()
         cin>>a[i];
     int ans=lis(a,n);
     cout<<ans<<"\n";
-    int ans1=lisrec(a,n-1);
-    cout<<ans1<<"\n";
 }
