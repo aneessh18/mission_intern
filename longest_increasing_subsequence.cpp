@@ -6,17 +6,12 @@ int lis(int a[],int n) // dp solution
     dp[0]=1;
     for(int i=1;i<n;i++)
     {
-        dp[0]=1;
-        int q=INT_MIN;
+        int q=1;
         for(int j=0;j<i;j++)
         {
             if(a[i]>a[j])
             {
                 q=max(q,1+dp[j]);
-            }
-            else
-            {
-                q=max(q,dp[j]);
             }
         }
         dp[i]=q;
