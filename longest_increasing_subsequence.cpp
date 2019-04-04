@@ -4,6 +4,7 @@ int lis(int a[],int n) // dp solution
 {
     int dp[n];
     dp[0]=1;
+    int ans=1;
     for(int i=1;i<n;i++)
     {
         int q=1;
@@ -15,8 +16,9 @@ int lis(int a[],int n) // dp solution
             }
         }
         dp[i]=q;
+        ans=max(ans,dp[i]);
     }
-    return dp[n-1];
+    return ans;
 }
 int main()
 {
