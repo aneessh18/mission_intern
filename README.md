@@ -1,6 +1,3 @@
-# mission_intern
-preparation for internship
+# Problem Solving through algorithms 
 
-this is a personal repository for practice 
-
-it contains all data structures and algortihms required for internship.
+[Open the door](https://leetcode.com/problems/open-the-lock/) : [open_the_lock.py](https://github.com/indavarapuaneesh/mission_intern/blob/master/ds_algo/open_the_lock.py)
